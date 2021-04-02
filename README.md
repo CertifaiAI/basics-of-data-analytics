@@ -1,34 +1,58 @@
 # basics-of-data-analytics
 Hands on tutorial for basics-of-data-analytics
 
-<---------------Suggested Readme ---------------->
+
 This repository serves as a tutorial for basics of data analytics
 ## Guidelines in Using this Repo
 
 This repository is structured in the following manner
 
-### DIR
-|_ Datasets <br>
-|_ Matplotlib <br>
-|_ Numpy <br>
-|_ Pandas <br>
-|_ README.md
+### Repo folder structure:<br>
+Basics of Data Analytics<br>
+|_ Numpy<br> 	
+&ensp;	|_ 01 - Subcontent<br>
+&ensp;	|_ 02 - Subcontent<br> 
+&ensp;	|_ ...<br>
+|_ Pandas<br>
+&ensp;	|_ 01 - Subcontent<br>
+&ensp;	|_ 02 - Subcontent<br>
+&ensp;	|_ ...<br>
+|_ Matplotlib<br>
+&ensp;	|_ 01 - Subcontent<br>
+&ensp;	|_ 02 - Subcontent<br>
+&ensp;	|_ ...<br>
+|_ Datasets<br>
+&ensp;	|_ pandas-ds01<br>
+&ensp;	|_ pandas-ds02<br>
+&ensp;	|_ numpy-ds01<br>
+&ensp;	|_ ...<br>
+|_ README.md<br>
 
-Descriptions:
-* datasets sub-folder is the folder to store relevant datasets for this repo.
+### Descriptions:
+* Datasets sub-folder is the folder to store relevant datasets for this repo.
 * Matplotlib is the folder to store notebooks that are relate to Matplotlib tutorial.
 * Numpy is the folder to store notebooks that are relate to Numpy tutorial.
 * Pandas is the folder to store notebooks that are relate to Pandas tutorial.
 
+### Format for notebooks (Title and heading styles for md cells)<br><br>
 
-### Notebook Naming Conventions
-Suggest to name the notebooks by:<br>
-" nn - title "
+Notebook file title:<br>
+Index No - Name of the section<br>
+Eg: 01 - Introduction<br><br>
 
-Where nn is the number of question. Title is the name of the notebook. <br>
-For example: 01 - Introduction to DataFrame
+Main notebook title<br> 
+Eg: Pandas<br><br>
 
-First line of notebook to be tally with notebook name for easy checking.
+Section title<br>
+Eg: Introduction<br><br>
+
+Subsection title<br> 
+Eg: What is Pandas?<br><br>
+
+# Example:
+## Pandas<br>
+### Introduction<br>
+### What is Pandas<br><br>
 
 Suggested by:<br>
 Boon Khai<br>
