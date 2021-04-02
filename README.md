@@ -22,7 +22,7 @@ Descriptions:
 
 
 ### Notebook Naming Conventions
-Suggest to name the notebooks by:
+Suggest to name the notebooks by:<br>
 "<nn> - <title>"
 
 Where nn is the number of question. Title is the name of the notebook. <br>
