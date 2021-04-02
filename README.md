@@ -1,5 +1,5 @@
-# cdle-exam-ts
-Question Bank for Time Series CDLE
+# basics-of-data-analytics
+Hands on tutorial for basics-of-data-analytics
 
 <---------------Suggested Readme ---------------->
 This repository serves as a tutorial for basics of data analytics
