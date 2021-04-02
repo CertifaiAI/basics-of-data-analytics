@@ -30,6 +30,6 @@ For example: 01 - Introduction to DataFrame
 
 First line of notebook to be tally with notebook name for easy checking.
 
-Suggested by:
-Boon Khai
+Suggested by:<br>
+Boon Khai<br>
 2 April 2021
