@@ -23,10 +23,10 @@ Descriptions:
 
 ### Notebook Naming Conventions
 Suggest to name the notebooks by:<br>
-"<nn> - <title>"
+" <nn> - <title> "
 
 Where nn is the number of question. Title is the name of the notebook. <br>
-For example: * 01 - Introduction to DataFrame
+For example: 01 - Introduction to DataFrame
 
 First line of notebook to be tally with notebook name for easy checking.
 
