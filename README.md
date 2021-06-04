@@ -41,9 +41,8 @@ This repository serves as a tutorial for beginner level data science practitione
 4. Activate the environment `basics-of-data-analytics` and start Jupyter Notebook from `~/basics-of-data-analytics`.
 5. Every package folder (Eg: Numpy) has an *"Exercise"* folder and a *"Solution"* folder. Follow along the notebooks in the *"Exercise"* folder. 
 
-    >   But if you couldn't resolve certain exercises or tasks within those notebooks in the *"Exercise"* folder, refer to the solution counterpart of that notebook located in the *"Solution"* folder (has the same file name).<br/>
-    <br/>
-    Eg: `Numpy/exercise/01 - NumPy ndarray.ipynb` -> `Numpy/solution/01 - NumPy ndarray.ipynb`
+    >   But if you couldn't resolve certain exercises or tasks within those notebooks in the *"Exercise"* folder, refer to the solution counterpart of that notebook located in the *"Solution"* folder (has the same file name)<br/>
+    >   Eg: `Numpy/exercise/01 - NumPy ndarray.ipynb` -> `Numpy/solution/01 - NumPy ndarray.ipynb`
 
 <hr/>
 
