@@ -7,7 +7,8 @@ on:
       - faris_add_codetest
   
   pull_request:
-    types: [synchronize, review_requested]
+    branches:
+      - main
 
 jobs:
   check_solution:
