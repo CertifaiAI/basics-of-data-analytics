@@ -21,13 +21,13 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: "3.9"
+          environment-file: "environment.yml"
+          # python-version: "3.9"
 
         # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
       - name: Install required dependencies 
         shell: bash -l {0}
         run: | 
-          conda install matplotlib pandas
           pip install treon
           shopt -s globstar
       
@@ -49,13 +49,13 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: "3.9"
+          environment-file: "environment.yml"
+         # python-version: "3.9"
 
         # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
       - name: Install required dependencies 
         shell: bash -l {0}
         run: | 
-          conda install matplotlib pandas
           pip install treon
           shopt -s globstar
       
