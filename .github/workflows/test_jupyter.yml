@@ -34,10 +34,11 @@ jobs:
           shopt -s globstar
       
       - name: Execute Treon 
+        continue-on-error: true
         shell: bash -l {0}
         run: |
           for i in **/${{ matrix.type }}/**; do 
-            treon "$i" || continue
+            treon "$i" 
           done
 
 
