@@ -1,0 +1,46 @@
+name: Check & Test Jupyter Notebook execution
+
+on:
+  push:
+    branches: 
+      - main
+      - faris_add_codetest
+  
+  pull_request:
+    types: [synchronize, review_requested]
+
+jobs:
+  check:
+    name: Test folder
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        type: ["{S,s}olution", "{E,e}xercise"] # Test based on folder
+    steps:
+      - name: Checkout repo into GitHub's runner
+        uses: actions/checkout@v2
+
+        # Setup mini-conda environment
+      - name: Setup Conda 
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: "3.9"
+
+        # Install dependencies into conda env / Set globstar on to allow "**" pattern
+      - name: Install required dependencies 
+        shell: bash -l {0}
+        run: | 
+          conda install matplotlib pandas
+          pip install treon
+          shopt -s globstar
+      
+      - name: Execute Treon 
+        shell: bash -l {0}
+        run: |
+          for i in **/${{ matrix.type }}/**; do 
+            treon "$i" || continue
+          done
+
+
+
+    
