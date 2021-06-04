@@ -4,11 +4,10 @@ on:
   push:
     branches: 
       - main
-      # - faris_add_codetest
+      - faris_add_codetest
   
   pull_request:
-    branches:
-      - main
+    types: [synchronize, review_requested]
 
 jobs:
   check_solution:
