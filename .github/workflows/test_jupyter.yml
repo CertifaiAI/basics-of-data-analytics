@@ -21,7 +21,7 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
-          environment-file: "environment.yml"
+          environment-file: "$GITHUB_WORKSPACE/environment.yml"
           # python-version: "3.9"
 
         # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
@@ -49,7 +49,7 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
-          environment-file: "environment.yml"
+          environment-file: "$GITHUB_WORKSPACE/environment.yml"
          # python-version: "3.9"
 
         # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
