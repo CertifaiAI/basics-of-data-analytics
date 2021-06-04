@@ -4,7 +4,7 @@ This repository serves as a tutorial for beginner level data science practitione
 
 ## Learning Content Outline
 
-### **Numpy**
+### [**Numpy**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Numpy/exercise)
 1. NumPy ndarray
 2. Array Creation
 3. Basic Operation
@@ -13,7 +13,7 @@ This repository serves as a tutorial for beginner level data science practitione
 6. Exercise for Array Creation & Basic Operation
 7. Exercise for Iterating, Indexing and Slicing & Manipulating ndarray
 
-### **Pandas**
+### [**Pandas**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Pandas/Exercise)
 1. Fundamentals of Pandas
 2. Basic Functions
 3. Common Operations
@@ -21,7 +21,7 @@ This repository serves as a tutorial for beginner level data science practitione
 5. Exercise for Fundamentals of Pandas & Basic Functions
 6. Exercise for Common Operations & Data Cleanup and Missing Data
 
-### **Matplotlib**
+### [**Matplotlib**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Matplotlib/Exercise)
 1. Getting Started with PyPlot
 2. Getting Started with PyPlot (Exercise)
 3. Creating Different Types of Graphs with PyPlot
@@ -31,17 +31,19 @@ This repository serves as a tutorial for beginner level data science practitione
 
 ## Guidelines to Use This Repo
 
-1. Ensure that you have **Anaconda** or **Miniconda** installed in your system.
-2. Clone this repo into your local machine.
+1. Ensure that you have [**Anaconda**](https://docs.anaconda.com/anaconda/install/) or [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html) installed in your system.
+2. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) this repo into your local machine.
 
-    >   Alternatively, you may just "Download as a zip"
+    >   Alternatively, you may just "Download ZIP" and unzip the folder locally.
 
 3. Create a new `conda` environment using `environment.yml`. Use this [guide](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) if you need help.
 
-4. Activate the environment and start a Jupyter Notebook instance.
+4. Activate the environment `basics-of-data-analytics` and start Jupyter Notebook from `~/basics-of-data-analytics`.
 5. Every package folder (Eg: Numpy) has an *"Exercise"* folder and a *"Solution"* folder. Follow along the notebooks in the *"Exercise"* folder. 
 
-    >   But if you couldn't resolve certain exercises or tasks within those notebooks, refer to the solution counterpart of that notebook located in the *"Solution"* folder (has the same file name).
+    >   But if you couldn't resolve certain exercises or tasks within those notebooks in the *"Exercise"* folder, refer to the solution counterpart of that notebook located in the *"Solution"* folder (has the same file name).<br/>
+    <br/>
+    Eg: `Numpy/exercise/01 - NumPy ndarray.ipynb` -> `Numpy/solution/01 - NumPy ndarray.ipynb`
 
 <hr/>
 
