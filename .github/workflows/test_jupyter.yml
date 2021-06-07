@@ -12,7 +12,7 @@ on:
 jobs:
   check_solution:
     name: Test Solution folder
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
@@ -21,26 +21,27 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
+          activate-environment: basics-of-data-analytics
           environment-file: "environment.yml"
-          # python-version: "3.9"
+          auto-activate-base: false
 
-        # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
+        # Install treon dependency into conda env 
       - name: Install required dependencies 
         shell: bash -l {0}
         run: | 
           pip install treon
-          shopt -s globstar
       
+        # Execute treon for every dedicated files
       - name: Execute Treon 
         shell: bash -l {0}
         run: |
-          for i in **/{S,s}olution/**; do 
+          for i in **/solution/**; do 
             treon "$i" 
           done
 
   check_exercise:
     name: Test Exercise folder
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
@@ -49,23 +50,23 @@ jobs:
       - name: Setup Conda 
         uses: conda-incubator/setup-miniconda@v2
         with:
+          activate-environment: basics-of-data-analytics
           environment-file: "environment.yml"
-         # python-version: "3.9"
+          auto-activate-base: false
 
-        # Install dependencies into conda env / Set globstar on to allow "**" pattern in bash
+        # Install treon dependency into conda env
       - name: Install required dependencies 
         shell: bash -l {0}
-        run: | 
+        run: |
           pip install treon
-          shopt -s globstar
-      
+
+        # Execute treon for every dedicated files
       - name: Execute Treon 
         shell: bash -l {0}
         run: |
-          for i in **/{E,e}xercise/**; do 
+          for i in **/exercise/**; do 
             treon "$i" || continue
           done
-
 
 
     
