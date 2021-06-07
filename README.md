@@ -2,44 +2,48 @@
 
 This repository serves as a tutorial for beginner level data science practitioners to acquaint with some of the packages and tools that most data science projects use.<br>
 
-## Guidelines in Using this Repo
+## Learning Content Outline
 
-This repository is structured in the following manner:-
+### [**Numpy**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Numpy/exercise)
+1. NumPy ndarray
+2. Array Creation
+3. Basic Operation
+4. Iterating, Indexing and Slicing
+5. Manipulating ndarray
+6. Exercise for Array Creation & Basic Operation
+7. Exercise for Iterating, Indexing and Slicing & Manipulating ndarray
 
-### **Directory Structure**
+### [**Pandas**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Pandas/Exercise)
+1. Fundamentals of Pandas
+2. Basic Functions
+3. Common Operations
+4. Data Cleanup and Missing Data
+5. Exercise for Fundamentals of Pandas & Basic Functions
+6. Exercise for Common Operations & Data Cleanup and Missing Data
 
-basics-of-data-analytics<br>
-|__ Numpy<br>
-&emsp;&emsp;|__ 01 - [Subcontent] <br>
-&emsp;&emsp;|__ 02 - [Subcontent]<br>
-&emsp;&emsp;|__ ... <br>
-|__ Pandas<br>
-&emsp;&emsp;|__ 01 - [Subcontent]<br>
-&emsp;&emsp;|__ 02 - [Subcontent]<br>
-&emsp;&emsp;|__ ...<br>
-|__ Matplotlib<br>
-&emsp;&emsp;|__ 01 - [Subcontent]<br>
-&emsp;&emsp;|__ 02 - [Subcontent]<br>
-&emsp;&emsp;|__ ...<br>
-|__ Datasets<br>
-&emsp;&emsp;|__ pandas-ds01<br>
-&emsp;&emsp;|__ pandas-ds02<br>
-&emsp;&emsp;|__ numpy-ds01<br>
-&emsp;&emsp;|__ ...<br>
-|__ README.md<br>
+### [**Matplotlib**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Matplotlib/Exercise)
+1. Getting Started with PyPlot
+2. Getting Started with PyPlot (Exercise)
+3. Creating Different Types of Graphs with PyPlot
+4. Creating Different Types of Graphs with PyPlot (Exercise)
 
-Description:
-* Each folder contains the notebooks and files relevant to each respective packages.
-* Datasets sub-folder is the folder to store datasets relevant to this repo.
+<hr/>
 
-### **Notebook Naming Conventions**
+## Guidelines to Use This Repo
 
-1. Notebook file title: [Index No] - [Name of the section] Eg: 01 - Introduction
-2. # [H1 for main notebook title] Eg: Pandas
-3. ## [H2 for section title] Eg: Introduction
-4. ### [H3 for subsection title] Eg: What is Pandas?
+1. Ensure that you have [**Anaconda**](https://docs.anaconda.com/anaconda/install/) or [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html) installed in your system.
+2. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) this repo into your local machine.
 
-*Suggested by:*<br>
-*Boon Khai* <br>
-*Scot*<br>
-*2 April 2021*<br>
+    >   Alternatively, you may just "Download ZIP" and unzip the folder locally.
+
+3. Create a new `conda` environment using `environment.yml`. Use this [guide](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) if you need help.
+
+4. Activate the environment `basics-of-data-analytics` and start Jupyter Notebook from `~/basics-of-data-analytics`.
+5. Every package folder (Eg: Numpy) has an *"Exercise"* folder and a *"Solution"* folder. Follow along the notebooks in the *"Exercise"* folder. 
+
+    >   But if you couldn't resolve certain exercises or tasks within those notebooks in the *"Exercise"* folder, refer to the solution counterpart of that notebook located in the *"Solution"* folder (has the same file name)<br/>
+    >   Eg: `Numpy/exercise/01 - NumPy ndarray.ipynb` -> `Numpy/solution/01 - NumPy ndarray.ipynb`
+
+<hr/>
+
+*Last updated: 4th June 2021*<br>
