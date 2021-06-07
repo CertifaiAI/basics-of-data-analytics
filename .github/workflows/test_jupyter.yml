@@ -4,15 +4,14 @@ on:
   push:
     branches: 
       - main
-      - faris_add_codetest
-  
+
   pull_request:
     types: [synchronize, review_requested]
 
 jobs:
   check_solution:
     name: Test Solution folder
-    runs-on: windows-latest
+    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
@@ -41,7 +40,7 @@ jobs:
 
   check_exercise:
     name: Test Exercise folder
-    runs-on: windows-latest
+    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
