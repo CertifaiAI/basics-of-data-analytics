@@ -1,0 +1,71 @@
+name: Check & Test Jupyter Notebook execution
+
+on:
+  push:
+    branches: 
+      - main
+
+  pull_request:
+    types: [synchronize, review_requested]
+
+jobs:
+  check_solution:
+    name: Test Solution folder
+    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
+    steps:
+      - name: Checkout repo into GitHub's runner
+        uses: actions/checkout@v2
+
+        # Setup mini-conda environment
+      - name: Setup Conda 
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: basics-of-data-analytics
+          environment-file: "environment.yml"
+          auto-activate-base: false
+
+        # Install treon dependency into conda env 
+      - name: Install required dependencies 
+        shell: bash -l {0}
+        run: | 
+          pip install treon
+      
+        # Execute treon for every dedicated files
+      - name: Execute Treon 
+        shell: bash -l {0}
+        run: |
+          for i in **/solution/**; do 
+            treon "$i" 
+          done
+
+  check_exercise:
+    name: Test Exercise folder
+    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
+    steps:
+      - name: Checkout repo into GitHub's runner
+        uses: actions/checkout@v2
+
+        # Setup mini-conda environment
+      - name: Setup Conda 
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: basics-of-data-analytics
+          environment-file: "environment.yml"
+          auto-activate-base: false
+
+        # Install treon dependency into conda env
+      - name: Install required dependencies 
+        shell: bash -l {0}
+        run: |
+          pip install treon
+
+        # Execute treon for every dedicated files
+      - name: Execute Treon 
+        shell: bash -l {0}
+        run: |
+          for i in **/exercise/**; do 
+            treon "$i" || continue
+          done
+
+
+    
