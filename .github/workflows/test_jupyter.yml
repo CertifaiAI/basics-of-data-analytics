@@ -9,7 +9,7 @@ on:
     types: [synchronize, review_requested]
 
 jobs:
-  check_solution:
+  check_windows:
     name: Test Solution folder on Windows
     runs-on: windows-latest 
     steps:
@@ -38,7 +38,7 @@ jobs:
             treon "$i" 
           done
 
-  check_exercise:
+  check_ubuntu:
     name: Test Solution folder on Ubuntu
     runs-on: ubuntu-latest 
     steps:
