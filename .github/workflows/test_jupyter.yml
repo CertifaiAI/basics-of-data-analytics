@@ -4,7 +4,6 @@ on:
   push:
     branches: 
       - main
-      - faris_environment
 
   pull_request:
     types: [synchronize, review_requested]
