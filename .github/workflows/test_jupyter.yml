@@ -10,7 +10,7 @@ on:
 
 jobs:
   check_solution:
-    name: Test Solution folder
+    name: Test Solution folder on Windows
     runs-on: windows-latest # Use windows as the repo contain window-only conda packages
     steps:
       - name: Checkout repo into GitHub's runner
@@ -39,8 +39,8 @@ jobs:
           done
 
   check_exercise:
-    name: Test Exercise folder
-    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
+    name: Test Solution folder on Ubuntu
+    runs-on: ubuntu-latest # Use windows as the repo contain window-only conda packages
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
@@ -63,8 +63,8 @@ jobs:
       - name: Execute Treon 
         shell: bash -l {0}
         run: |
-          for i in **/exercise/**; do 
-            treon "$i" || continue
+          for i in **/{S,s}olution/**; do 
+            treon "$i"
           done
 
 
