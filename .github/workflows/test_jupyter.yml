@@ -12,7 +12,7 @@ on:
 jobs:
   check_solution:
     name: Test Solution folder on Windows
-    runs-on: windows-latest # Use windows as the repo contain window-only conda packages
+    runs-on: windows-latest 
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
@@ -41,7 +41,7 @@ jobs:
 
   check_exercise:
     name: Test Solution folder on Ubuntu
-    runs-on: ubuntu-latest # Use windows as the repo contain window-only conda packages
+    runs-on: ubuntu-latest 
     steps:
       - name: Checkout repo into GitHub's runner
         uses: actions/checkout@v2
