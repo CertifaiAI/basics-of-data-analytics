@@ -29,11 +29,11 @@ This repository serves as a tutorial for beginner level data science practitione
 
 <hr/>
 
-## Guidelines to Use this repo for students
+## Guidelines to Use This Repository
 
 1. Ensure that you have [**Anaconda**](https://docs.anaconda.com/anaconda/install/) or [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html) installed in your system.
 
-2. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) this repo into your local machine.  
+2. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) this repository into your local machine.  
 
     ```
     git clone https://github.com/CertifaiAI/basics-of-data-analytics.git
