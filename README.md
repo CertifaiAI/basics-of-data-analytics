@@ -2,6 +2,16 @@
 
 This repository serves as a tutorial for beginner level data science practitioners to acquaint with some of the packages and tools that most data science projects use.<br>
 
+Table of Contents
+-----------------
+
+- [Learning Content Outline](#learning-content-outline)
+    - [Numpy](#numpy)
+    - [Pandas](#pandas)
+    - [Matplotlib](#matplotlib)
+- [Guidelines to Use This Repository](#guidelines-to-use-this-repository)
+- [Other References](#other-references)
+
 ## Learning Content Outline
 
 ### [**NumPy**](https://github.com/CertifaiAI/basics-of-data-analytics/tree/main/Numpy/exercise)
@@ -82,4 +92,5 @@ This repository serves as a tutorial for beginner level data science practitione
 
 <hr/>
 
-<br>
+## Other References
+- [Jupyter Shortcuts Guidelines](https://github.com/CertifaiAI/basics-of-data-analytics/blob/main/jupyter-guidelines.md)
